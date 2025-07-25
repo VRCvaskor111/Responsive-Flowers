@@ -1,0 +1,743 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e67e22;
+    text-decoration: none;
+}
+
+.logo-icon {
+    margin-right: 8px;
+    font-size: 28px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #e67e22;
+}
+
+.cart-icon {
+    color: #333 !important;
+    font-weight: 600 !important;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.cart-mobile {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Banner Section */
+/* .banner {
+    background: #ffffff;
+    padding: 80px 0;
+}
+
+.banner-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    align-items: center;
+}
+
+.banner-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #333;
+}
+
+.banner-text h1 .highlight {
+    color: #e67e22;
+}
+
+.banner-text p {
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.banner-image {
+    text-align: center;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+} */
+
+/* ===== BANNER SECTION ===== */
+.banner {
+    padding: 4rem 0;
+    background: white;
+}
+
+.banner-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 3rem;
+    align-items: center;
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Plants Section */
+.plants-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.section-header h2 .highlight {
+    color: #e67e22;
+}
+
+.section-header p {
+    font-size: 16px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.plants-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.plant-card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.plant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.plant-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+.plant-card .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 12px;
+    background: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+.add-to-cart:hover {
+    background: #d35400;
+}
+
+/* Latest Deals Section */
+.deals-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.deals-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.deal-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 180px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.deal-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.deal-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+.deal-card.bloom {
+    background-image: url('assets/deal-bloom.png');
+}
+
+.deal-card.ana {
+    background-image: url('assets/deal-ana.png');
+}
+
+.deal-card.zabo {
+    background-image: url('assets/deal-zabo.png');
+    height: 380px;
+}
+
+.deal-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.deal-card .shop-now {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    padding-bottom: 2px;
+    transition: opacity 0.3s;
+}
+
+.deal-card .shop-now:hover {
+    opacity: 0.8;
+}
+
+/* Plants Lover Section */
+.plants-lover {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.lover-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.lover-image {
+    position: relative;
+}
+
+.lover-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.trusted-badge {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(45deg, #f39c12, #f1c40f);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.badge-inner {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.check-icon {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    background: #27ae60;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 5px;
+}
+
+.badge-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.text-top,
+.text-bottom {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.lover-text h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.lover-text ul {
+    list-style: none;
+}
+
+.lover-text li {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.lover-text li::before {
+    content: "•";
+    color: #e67e22;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Join Section */
+.join-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 200px 0;
+    color: white;
+    text-align: center;
+}
+
+.join-section h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 18px 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.newsletter-form input::placeholder {
+    color: #999;
+}
+
+.newsletter-form button {
+    padding: 18px 35px;
+    background: #e67e22;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+
+.newsletter-form button:hover {
+    background: #d35400;
+}
+
+/* Footer */
+.footer {
+    background: #fff;
+    padding: 60px 0 30px;
+    border-top: 1px solid #eee;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.footer-brand .footer-logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #e67e22;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+}
+
+/* .social-link.linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+.social-link.twitter {
+    background: #000;
+    color: white;
+}
+
+.social-link.facebook {
+    background: #1877f2;
+    color: white;
+}
+
+.social-link.youtube {
+    background: #ff0000;
+    color: white;
+} */
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Mobile Navbar */
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    /* Mobile Banner */
+    .banner {
+        padding: 40px 0;
+    }
+
+    .banner-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .banner-image {
+        order: -1;
+    }
+
+    .banner-text h1 {
+        font-size: 32px;
+    }
+
+    /* Mobile Plants Grid */
+    .plants-section {
+        padding: 60px 0;
+    }
+
+    .plants-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .plant-card {
+        padding: 15px;
+    }
+
+    .plant-card img {
+        height: 150px;
+    }
+
+    /* Mobile Deals */
+    .deals-section {
+        padding: 60px 0;
+    }
+
+    .deals-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .deals-left {
+        display: none;
+    }
+
+    .deal-card.zabo {
+        height: 250px;
+    }
+
+    .deal-card h3 {
+        font-size: 20px;
+    }
+
+    /* Mobile Plants Lover */
+    .plants-lover {
+        padding: 60px 0;
+    }
+
+    .lover-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .lover-image {
+        order: -1;
+    }
+
+    .lover-image img {
+        height: 250px;
+    }
+
+    .trusted-badge {
+        display: none;
+    }
+
+    .lover-text h2 {
+        font-size: 28px;
+    }
+
+    /* Mobile Join */
+    .join-section {
+        padding: 60px 0;
+        background-attachment: scroll;
+    }
+
+    .join-section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        border-radius: 15px;
+        max-width: 90%;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        border-radius: 0;
+        padding: 15px 20px;
+    }
+
+    .newsletter-form input {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .newsletter-form button {
+        border-radius: 0 0 15px 15px;
+    }
+
+    /* Mobile Footer */
+    .footer {
+        padding: 40px 0 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .plants-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-text h1 {
+        font-size: 28px;
+    }
+
+    .join-section h2 {
+        font-size: 24px;
+    }
+
+    .lover-text h2 {
+        font-size: 24px;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+    }
+}
