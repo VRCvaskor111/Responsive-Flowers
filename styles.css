@@ -366,21 +366,7 @@ body {
 }
 
 
-/* .check-icon {
-    display: block;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    background: #27ae60;
-    color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 5px;
-} */
+
 
 
 .text-top,
@@ -413,7 +399,7 @@ body {
 
 .lover-text li::before {
     content: "•";
-    color: #000000 50%;
+    color: #000000 ;
     font-size: 20px;
     position: absolute;
     left: 0;
@@ -552,7 +538,7 @@ body {
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .container {
         padding: 0 15px;
     }
@@ -591,12 +577,13 @@ body {
     }
 
     .plants-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
 
     .plant-card {
         padding: 15px;
+        border: 2px solid red;
     }
 
     .plant-card img {
@@ -711,9 +698,9 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .plants-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .banner-text h1 {
@@ -731,4 +718,4 @@ body {
     .section-header h2 {
         font-size: 24px;
     }
-}
+} */
