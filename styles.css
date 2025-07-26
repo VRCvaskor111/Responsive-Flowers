@@ -144,6 +144,10 @@ body {
     color: #333;
 }
 
+.highlight{
+    color: #E95A08;
+}
+
 /* Plants Section */
 .plants-section {
     padding: 80px 0;
@@ -162,9 +166,9 @@ body {
     font-weight: 600;
 }
 
-.section-header h2 .highlight {
+/* .section-header h2 .highlight {
     color: #e67e22;
-}
+} */
 
 .section-header p {
     font-size: 16px;
