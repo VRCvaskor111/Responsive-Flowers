@@ -239,7 +239,7 @@ body {
 /* Latest Deals Section */
 .deals-section {
     padding: 80px 0;
-    background: #f8f9fa;
+    background: white;
 }
 
 .deals-grid {
@@ -346,23 +346,25 @@ body {
     position: absolute;
     top: -30px;
     right: -30px;
-    width: 120px;
-    height: 120px;
-    background: linear-gradient(45deg, #f39c12, #f1c40f);
+    width: 150px;
+    height: 150px;
+    /* background: linear-gradient(45deg, #f39c12, #f1c40f); */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     z-index: 10;
+    object-fit: cover;
+    /* height: auto; */
 }
 
-.badge-inner {
+/* .badge-inner {
     text-align: center;
     color: #2c3e50;
-}
+} */
 
-.check-icon {
+/* .check-icon {
     display: block;
     font-size: 24px;
     font-weight: bold;
@@ -376,13 +378,13 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto 5px;
-}
+} */
 
-.badge-text {
+/* .badge-text {
     display: flex;
     flex-direction: column;
     gap: 2px;
-}
+} */
 
 .text-top,
 .text-bottom {
