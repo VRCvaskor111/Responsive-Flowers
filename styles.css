@@ -496,6 +496,7 @@ body {
     /* Mobile Banner */
     .banner {
         padding: 40px 0;
+        position: relative;
     }
 
     .banner-content {
@@ -509,7 +510,7 @@ body {
     }
 
     .banner-text h1 {
-        font-size: 32px;
+        font-size: 24px;
     }
 
 
@@ -615,9 +616,10 @@ body {
     }
 
     .footer-content {
+        display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
-        text-align: center;
+        text-align: left;
     }
 
     .footer-links {
